@@ -1,0 +1,280 @@
+/* login and register page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* Container adjustment */
+    .container.login-container,
+    .container.register-container-custom {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Cards adjustment */
+    .login-card,
+    .register-card-custom {
+        padding: 25px 20px;
+        margin: 20px 0;
+    }
+
+    /* Titles */
+    .login-title,
+    .register-title-custom {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Inputs */
+    .login-input,
+    .register-input-custom {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    /* Password icon fix for mobile */
+    .password-toggle {
+        top: 50%;
+        right: 10px;
+        font-size: 16px;
+    }
+
+    /* Buttons */
+    .login-btn,
+    .register-btn-custom {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    /* Footer text */
+    .login-footer,
+    .register-footer-custom {
+        font-size: 13px;
+    }
+}
+
+/* navbar mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* navbar */
+    .navbar-custom {
+        padding: 15px 20px !important;
+    }
+
+    .desktop-logout-only {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    /* Menu drawer setup */
+    .collapse.navbar-collapse {
+        display: none !important;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+    }
+
+    /* open menu */
+    .collapse.navbar-collapse.show-mobile {
+        display: flex !important;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Mobile Active Link Styling */
+    .nav-links .nav-link {
+        width: 80%;
+        text-align: center;
+        padding: 12px 0 !important;
+    }
+
+    .nav-links .nav-link.active {
+        background: #f0f4ff;
+        color: #1f3c88 !important;
+        border-radius: 8px;
+    }
+
+    .nav-links .nav-link.active::after {
+        display: none;
+    }
+
+    .mobile-logout-only {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .mobile-logout-only button {
+        background: #1f3c88;
+        color: #fff;
+        border: none;
+        padding: 10px 35px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 30px;
+    }
+}
+
+/* navbar tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Navbar padding adjust */
+    .navbar-custom {
+        padding: 15px 20px !important;
+        height: 78px;
+    }
+
+    /* Logo size */
+    .nav-logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .mobile-toggle {
+        display: none !important;
+    }
+
+    .collapse.navbar-collapse {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        position: relative !important;
+        top: 0 !important;
+        box-shadow: none !important;
+        flex: 2;
+    }
+
+    /* Nav links */
+    .nav-links {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20px !important;
+    }
+
+    .nav-links .nav-link {
+        font-size: 1rem;
+        padding: 5px 0 !important;
+    }
+
+    .desktop-logout-only {
+        display: flex !important;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .mobile-logout-only {
+        display: none !important;
+    }
+
+    /* Tablet button size */
+    .nav-actions button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+/* student list page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .custom-student-table thead {
+        display: none;
+    }
+
+    .custom-student-table td {
+        display: block;
+        padding: 12px 18px;
+        border: none;
+        text-align: right;
+        position: relative;
+    }
+
+    .custom-student-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 18px;
+        font-weight: 700;
+        color: #1f3c88;
+    }
+
+    /* Target the cell containing buttons */
+    .action-buttons-cell {
+        padding: 20px 18px !important;
+        border-bottom: 2px solid #eee !important;
+    }
+
+    /* Force the wrapper to use flex with gap */
+    .mobile-btn-wrapper {
+        display: flex !important;
+        justify-content: flex-end !important;
+        gap: 15px !important;
+    }
+
+    .btn-edit-custom,
+    .btn-delete-custom {
+        padding: 8px 18px !important;
+        font-size: 13px !important;
+    }
+}
+
+/* add student page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .add-student-page-container {
+        padding: 20px 10px;
+        align-items: flex-start;
+    }
+
+    .add-student-card-custom {
+        padding: 25px 20px;
+        min-width: 100%;
+        border-radius: 10px;
+    }
+
+    .add-student-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .add-student-form {
+        gap: 15px;
+    }
+
+    .add-student-input-group label {
+        font-size: 13px;
+    }
+
+    .add-student-input-group input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .add-student-submit-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+/* edit student page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .edit-card-custom {
+        padding: 20px;
+    }
+
+    .edit-title {
+        font-size: 20px;
+    }
+
+    .edit-input-group input {
+        padding: 10px;
+    }
+}
