@@ -11,9 +11,8 @@ connectdb();
 
 const app = express();
 
-app.use(cors({
-    origin: "http://localhost:5173"
-}));
+// Cors (allow all origins)
+app.use(cors());
 
 app.use(express.json());
 

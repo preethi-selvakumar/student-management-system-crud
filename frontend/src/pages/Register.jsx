@@ -46,7 +46,7 @@ function Register() {
 
         try {
             // API call to register
-            const res = await axios.post("http://localhost:5000/api/auth/register", formData);
+            const res = await axios.post("https://student-management-backend-k25u.onrender.com/api/auth/register", formData);
             alert(res.data.message);
 
             // Passing email to Login page via state
