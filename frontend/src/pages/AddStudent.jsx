@@ -50,7 +50,10 @@ function AddStudent() {
         try {
             // Using token from Context
             await axios.post("https://student-management-backend-k25u.onrender.com/api/students", formData, {
-                headers: { authorization: `bearer ${token}` },
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+
             });
             alert("Student added successfully!");
             navigate("/students");

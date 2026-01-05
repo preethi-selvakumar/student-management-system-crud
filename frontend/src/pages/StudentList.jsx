@@ -23,9 +23,9 @@ function StudentList() {
         axios
             .get("https://student-management-backend-k25u.onrender.com/api/students", {
                 headers: {
-                    // Using Context token
-                    authorization: `bearer ${token}`,
+                    Authorization: `Bearer ${token}`,
                 },
+
             })
             .then((res) => {
                 setStudents(res.data);
@@ -42,8 +42,9 @@ function StudentList() {
             try {
                 await axios.delete(`https://student-management-backend-k25u.onrender.com/api/students/${id}`, {
                     headers: {
-                        authorization: `bearer ${token}`,
+                        Authorization: `Bearer ${token}`,
                     },
+
                 });
                 alert("Student deleted successfully!");
                 fetchStudents();

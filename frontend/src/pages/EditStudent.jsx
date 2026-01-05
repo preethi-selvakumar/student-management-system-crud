@@ -46,7 +46,10 @@ function EditStudent() {
         try {
             // Using Context token
             await axios.put(`https://student-management-backend-k25u.onrender.com/api/students/${id}`, formData, {
-                headers: { authorization: `bearer ${token}` },
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+
             });
             alert("Student details updated successfully!");
             navigate("/students");
